@@ -4,9 +4,9 @@ import { Container } from "./container";
 
 export function Hero() {
   return (
-    <section id="hero" className="py-20">
-      <Container className="flex flex-col-reverse items-center justify-between gap-12 rounded-3xl bg-white/80 px-8 py-10 shadow-xl ring-1 ring-slate-200/60 text-center lg:flex-row lg:rounded-[40px] lg:px-16 lg:py-14 lg:text-left">
-        <div className="space-y-6">
+    <section id="hero" className="py-12">
+      <Container className="flex flex-col-reverse items-center justify-between gap-6 rounded-3xl bg-white/80 px-8 py-8 shadow-xl ring-1 ring-slate-200/60 text-center lg:flex-row lg:rounded-[40px] lg:px-14 lg:py-12 lg:text-left">
+        <div className="space-y-4">
           <p className="inline-flex items-center gap-2 rounded-full bg-indigo-100 px-3 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-indigo-600">
             Senior Software Engineer
           </p>
