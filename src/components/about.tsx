@@ -22,8 +22,8 @@ export function About() {
         <div className="max-w-xl rounded-3xl bg-white/80 p-8 shadow-lg ring-1 ring-slate-200/60">
           <SectionHeading
             eyebrow="About"
-            title="Thoughtful senior software engineering"
-            description="I'm Piotr Wesołowski, a senior software engineer focused on clear architecture and resilient services. I enjoy simplifying distributed systems, refining developer workflows, and supporting teams with calm leadership."
+            title="Senior software engineering rooted in Java"
+            description="I'm Piotr Wesołowski, a senior software engineer with deep experience across Java ecosystems. I align solutions with real business goals while championing performance, code quality, and scalable architectures. Colleagues know me for analytical problem solving and a genuine drive to share knowledge across the team."
           />
         </div>
       </Container>

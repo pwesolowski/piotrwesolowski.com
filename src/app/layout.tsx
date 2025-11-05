@@ -24,7 +24,7 @@ export const metadata: Metadata = {
     template: "%s | Piotr Wesołowski",
   },
   description:
-    "Piotr Wesołowski is a senior software engineer building scalable, secure systems with Java, Node.js, and cloud-native technologies.",
+    "Piotr Wesołowski is a senior software engineer with deep Java framework expertise, delivering scalable systems that balance business goals with performance and code quality.",
   keywords: [
     "Piotr Wesołowski",
     "Senior Software Engineer",

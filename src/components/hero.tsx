@@ -14,7 +14,7 @@ export function Hero() {
             Piotr Wesołowski
           </h1>
           <p className="text-base leading-relaxed text-slate-600">
-            I design and build backend systems that are easy to maintain, secure, and ready to scale. My focus is on strong APIs, dependable infrastructure, and pragmatic engineering.
+            I design and build future-proof platforms with a strong foundation in Java frameworks, pairing business context with performance, clean code, and analytical problem solving.
           </p>
         </div>
         <div className="flex justify-center">
