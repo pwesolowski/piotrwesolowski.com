@@ -1,7 +1,7 @@
 import { Container } from "./container";
 
 const links = [
-  { label: "LinkedIn", href: "https://www.linkedin.com/in/piotrwesolowski", external: true },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/piotr-wesolowski", external: true },
   { label: "Email", href: "mailto:kontakt@piotrwesolowski.com" },
 ];
 

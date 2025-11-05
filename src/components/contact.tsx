@@ -20,7 +20,7 @@ export function Contact() {
               kontakt@piotrwesolowski.com
             </a>
             <a
-              href="https://www.linkedin.com/in/piotrwesolowski"
+              href="https://www.linkedin.com/in/piotr-wesolowski"
               className="inline-flex items-center gap-3 rounded-full border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-indigo-400 hover:text-indigo-500"
               target="_blank"
               rel="noopener noreferrer"
