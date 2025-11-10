@@ -33,7 +33,7 @@ export function Contact() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Umów się na spotkanie ze mną
+              Meet with me
             </a>
           </div>
         </div>
