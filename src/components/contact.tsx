@@ -12,7 +12,7 @@ export function Contact() {
             description="Reach out via email or connect on LinkedIn."
             align="center"
           />
-          <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-center">
+          <div className="mt-6 flex flex-col items-center gap-3 sm:flex-row sm:flex-wrap sm:justify-center">
             <a
               href="mailto:kontakt@piotrwesolowski.com"
               className="inline-flex items-center gap-3 rounded-full border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-indigo-400 hover:text-indigo-500"
@@ -26,6 +26,14 @@ export function Contact() {
               rel="noopener noreferrer"
             >
               LinkedIn
+            </a>
+            <a
+              href="https://calendly.com/piowes30/30min/"
+              className="inline-flex items-center gap-3 rounded-full border border-slate-200 px-5 py-3 text-sm font-semibold text-slate-700 transition-colors hover:border-indigo-400 hover:text-indigo-500"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Umów się na spotkanie ze mną
             </a>
           </div>
         </div>
