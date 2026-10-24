@@ -45,6 +45,7 @@ export function siteJsonLd(locale: Locale) {
         url: absoluteUrl(href({ page: "home" }, locale)),
         image: absoluteUrl("/profilePhoto.jpeg"),
         email: siteConfig.email,
+        telephone: siteConfig.phone,
         areaServed: { "@type": "Country", name: "Poland" },
         founder: { "@id": personId },
         knowsAbout,

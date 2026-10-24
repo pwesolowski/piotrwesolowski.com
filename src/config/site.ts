@@ -23,6 +23,9 @@ export const siteConfig = {
   name: "Piotr Wesołowski",
   url: "https://piotrwesolowski.com",
   email: "kontakt@piotrwesolowski.com",
+  /** E.164 for tel: links and JSON-LD; `phoneDisplay` is what people see. */
+  phone: "+48786650592",
+  phoneDisplay: "+48 786 650 592",
   calendlyUrl: "https://calendly.com/piowes30/30min/",
 
   /** Empty strings are skipped in links and JSON-LD sameAs. */

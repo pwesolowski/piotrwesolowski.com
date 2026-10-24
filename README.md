@@ -14,13 +14,12 @@ npm run lint
 
 | Ścieżka | Co zawiera |
 |---|---|
-| `src/config/site.ts` | Linki, Calendly, e-mail, social media, pasek zaufania, referencje, `showPrices` |
+| `src/config/site.ts` | Linki, Calendly, e-mail, telefon, social media, pasek zaufania, referencje, `showPrices` |
 | `src/config/services.ts` | Usługi: slug URL i fraza SEO per język, opcjonalna cena |
 | `src/messages/pl.ts`, `en.ts` | **Wszystkie teksty.** `en.ts` jest typowany kształtem `pl.ts` — brak klucza = błąd builda |
 | `content/case-studies/*.json` | Case studies (PL + EN w jednym pliku) |
 | `src/i18n/routes.ts` | Jedno źródło prawdy dla adresów URL (+ rewrites w `next.config.ts`) |
 | `src/styles/tokens.css` | Wspólne tokeny (kolory, typografia, radius) — do skopiowania do pioter.ai |
-| `src/lib/contact/providers.ts` | Adaptery formularza kontaktowego (Resend / Formspree), domyślnie wyłączone |
 | `src/lib/json-ld.ts`, `src/lib/seo.ts`, `src/lib/og.tsx` | JSON-LD, metadata/hreflang, obrazki OG |
 
 ### Adresy URL
@@ -59,12 +58,10 @@ Podstrona, rewrites, sitemap, OG image i JSON-LD powstaną automatycznie.
 Sekcja „Realizacje” ukrywa się, gdy nie ma opublikowanych wpisów — wtedy przycisk
 „Zobacz realizacje” prowadzi na pioter.ai.
 
-## Formularz kontaktowy
+## Kontakt
 
-Domyślnie nieaktywny: po wysłaniu użytkownik widzi prośbę o kontakt e-mailem.
-Aby go włączyć, ustaw zmienne z `.env.example` (lokalnie `.env.local`, na produkcji
-w ustawieniach Vercel): `CONTACT_PROVIDER=resend` lub `formspree` + klucze.
-Własnego dostawcę dodasz jako kolejny adapter w `src/lib/contact/providers.ts`.
+Sekcja kontaktu pokazuje Calendly, telefon i e-mail — wszystkie z `src/config/site.ts`
+(`calendlyUrl`, `phone` / `phoneDisplay`, `email`). Telefon trafia też do stopki i JSON-LD.
 
 ## Analityka
 

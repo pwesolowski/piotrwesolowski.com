@@ -40,7 +40,7 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
       <AboutTeaser locale={locale} t={t} />
       <Testimonials locale={locale} t={t} />
       <Faq t={t} />
-      <ContactSection locale={locale} t={t} />
+      <ContactSection t={t} />
     </>
   );
 }

@@ -23,6 +23,11 @@ export function SiteFooter({ locale, t }: SiteFooterProps) {
               {siteConfig.email}
             </a>
           </p>
+          <p>
+            <a href={`tel:${siteConfig.phone}`} className="hover:text-foreground">
+              {siteConfig.phoneDisplay}
+            </a>
+          </p>
         </div>
 
         <ul className="flex flex-wrap gap-x-5 gap-y-2">
