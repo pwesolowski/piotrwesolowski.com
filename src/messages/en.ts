@@ -165,11 +165,11 @@ export const en: Messages = {
     eyebrow: "About",
     title: "An engineer who implements, not just advises",
     paragraphs: [
-      "I've worked in IT since 2010 as a software engineer, team lead and engineering manager. I build Java and Node.js backends, TypeScript, AWS, as well as frontend and PWAs. I know what makes a system succeed beyond the demo: performance, security, maintenance.",
+      "I've worked in IT since 2010 as a software engineer, team lead and engineering manager. I build Java and Node.js backends, TypeScript, frontend and PWAs. I deploy on AWS and on EU-based servers (OVH). I know what makes a system succeed beyond the demo: performance, security, maintenance.",
       "I develop my own industry SaaS. What I offer clients, I test on my own product first.",
     ],
     stackLabel: "Technologies",
-    stack: ["Java", "Node.js", "TypeScript", "AWS", "Frontend / PWA", "Claude", "MCP"],
+    stack: ["Java", "Node.js", "TypeScript", "AWS", "OVH", "Frontend / PWA", "Claude", "MCP"],
     more: "How I work",
     photoAlt: "Piotr Wesołowski",
   },
@@ -201,7 +201,7 @@ export const en: Messages = {
       {
         title: "Experience",
         paragraphs: [
-          "I've worked in IT since 2010: as a software engineer, team lead and engineering manager. Technologies: Java, Node.js, TypeScript, AWS, frontend and PWAs. I've led teams and designed systems where performance, code quality and scalability matter.",
+          "I've worked in IT since 2010: as a software engineer, team lead and engineering manager. Technologies: Java, Node.js, TypeScript, frontend and PWAs; infrastructure: AWS and EU-based servers (OVH). I've led teams and designed systems where performance, code quality and scalability matter.",
           "I develop my own industry SaaS. I use the same solutions every day that I implement for clients.",
           // TODO: add industries and SaaS name (if you want to disclose them).
         ],
@@ -230,7 +230,7 @@ export const en: Messages = {
     items: [
       {
         q: "Is my data safe? What about GDPR?",
-        a: "We agree up front which data goes to the model and which doesn't. I use services that don't train models on customer data and keep system access to the necessary minimum. Where needed, we sign a data processing agreement.",
+        a: "We agree up front which data goes to the model and which doesn't. I use services that don't train models on customer data and keep system access to the necessary minimum. If required, the solution can run on servers in the European Union. Where needed, we sign a data processing agreement.",
       },
       {
         q: "How much do the AI models cost to run?",

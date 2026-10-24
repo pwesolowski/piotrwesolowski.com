@@ -171,11 +171,11 @@ export const pl = {
     eyebrow: "O mnie",
     title: "Inżynier, który wdraża, a nie tylko doradza",
     paragraphs: [
-      "W branży IT działam od 2010 roku jako software engineer, team lead i engineering manager. Buduję backend w Javie i Node.js, TypeScript, chmurę AWS, a także frontend i aplikacje PWA. Wiem, co decyduje o sukcesie systemu poza prezentacją: wydajność, bezpieczeństwo, utrzymanie.",
+      "W branży IT działam od 2010 roku jako software engineer, team lead i engineering manager. Buduję backend w Javie i Node.js, TypeScript, frontend i aplikacje PWA. Wdrażam na chmurze AWS i na serwerach w UE (OVH). Wiem, co decyduje o sukcesie systemu poza prezentacją: wydajność, bezpieczeństwo, utrzymanie.",
       "Rozwijam własny branżowy SaaS. To, co proponuję klientom, najpierw sprawdzam u siebie.",
     ],
     stackLabel: "Technologie",
-    stack: ["Java", "Node.js", "TypeScript", "AWS", "Frontend / PWA", "Claude", "MCP"],
+    stack: ["Java", "Node.js", "TypeScript", "AWS", "OVH", "Frontend / PWA", "Claude", "MCP"],
     more: "Jak pracuję",
     photoAlt: "Piotr Wesołowski",
   },
@@ -207,7 +207,7 @@ export const pl = {
       {
         title: "Doświadczenie",
         paragraphs: [
-          "W branży IT działam od 2010 roku: jako software engineer, team lead i engineering manager. Technologie: Java, Node.js, TypeScript, AWS, frontend i aplikacje PWA. Prowadziłem zespoły i projektowałem systemy, w których liczą się wydajność, jakość kodu i skalowalność.",
+          "W branży IT działam od 2010 roku: jako software engineer, team lead i engineering manager. Technologie: Java, Node.js, TypeScript, frontend i aplikacje PWA, a infrastruktura: chmura AWS i serwery w UE (OVH). Prowadziłem zespoły i projektowałem systemy, w których liczą się wydajność, jakość kodu i skalowalność.",
           "Rozwijam własny branżowy SaaS. Na co dzień korzystam z tych samych rozwiązań, które wdrażam u klientów.",
           // TODO: dopisz branże i nazwę SaaS (jeśli chcesz je ujawnić).
         ],
@@ -236,7 +236,7 @@ export const pl = {
     items: [
       {
         q: "Czy moje dane są bezpieczne? Jak jest z RODO?",
-        a: "Ustalamy na starcie, jakie dane trafiają do modelu, a jakie nie. Korzystam z usług, które nie trenują modeli na danych klientów, a dostęp do systemów ograniczam do niezbędnego minimum. Gdy to potrzebne, podpisujemy umowę powierzenia przetwarzania danych.",
+        a: "Ustalamy na starcie, jakie dane trafiają do modelu, a jakie nie. Korzystam z usług, które nie trenują modeli na danych klientów, a dostęp do systemów ograniczam do niezbędnego minimum. Jeśli to wymagane, rozwiązanie może działać na serwerach w Unii Europejskiej. Gdy to potrzebne, podpisujemy umowę powierzenia przetwarzania danych.",
       },
       {
         q: "Ile kosztuje korzystanie z modeli AI?",
