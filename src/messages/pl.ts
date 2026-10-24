@@ -40,7 +40,7 @@ export const pl = {
     role: "AI Product Engineer",
     h1: "AI Product Engineer — inżynier AI, który rozumie biznes",
     lead: "Wdrażam AI, które realnie odciąża Twoją firmę.",
-    sub: "Jestem inżynierem oprogramowania, nie marketingowcem AI. Zaczynam od problemu biznesowego, a kończę na systemie, który działa w produkcji i daje mierzalny efekt.",
+    sub: "Jestem inżynierem oprogramowania, nie marketingowcem AI. Zaczynam od problemu biznesowego, a kończę na działającym systemie, który daje mierzalny efekt.",
     photoAlt: "Piotr Wesołowski",
   },
 
@@ -100,7 +100,7 @@ export const pl = {
         steps: [
           { title: "Wybór procesu", text: "Zaczynamy od jednego procesu, który najbardziej boli." },
           { title: "Prototyp na Twoich dokumentach", text: "Sprawdzam skuteczność na prawdziwych przykładach." },
-          { title: "Wdrożenie produkcyjne", text: "Integracja, walidacje, monitoring i obsługa błędów." },
+          { title: "Uruchomienie w firmie", text: "Integracja, walidacje, monitoring i obsługa błędów." },
           { title: "Wsparcie i rozwój", text: "Poprawki po pierwszych tygodniach i kolejne procesy." },
         ],
       },
@@ -171,8 +171,8 @@ export const pl = {
     eyebrow: "O mnie",
     title: "Inżynier, który wdraża, a nie tylko doradza",
     paragraphs: [
-      "W branży IT działam od 2010 roku jako software engineer, team lead i engineering manager. Buduję backend w Javie i Node.js, TypeScript, chmurę AWS, a także frontend i aplikacje PWA. Znam produkcję od strony, której nie widać na demo: wydajność, bezpieczeństwo, utrzymanie.",
-      "Rozwijam własny branżowy SaaS, który działa w produkcji i jest zintegrowany z Claude przez MCP. To, co proponuję klientom, najpierw sprawdzam u siebie.",
+      "W branży IT działam od 2010 roku jako software engineer, team lead i engineering manager. Buduję backend w Javie i Node.js, TypeScript, chmurę AWS, a także frontend i aplikacje PWA. Wiem, co decyduje o sukcesie systemu poza prezentacją: wydajność, bezpieczeństwo, utrzymanie.",
+      "Rozwijam własny branżowy SaaS zintegrowany z Claude przez MCP. To, co proponuję klientom, najpierw sprawdzam u siebie.",
     ],
     stackLabel: "Technologie",
     stack: ["Java", "Node.js", "TypeScript", "AWS", "Frontend / PWA", "Claude", "MCP"],
@@ -187,7 +187,7 @@ export const pl = {
     eyebrow: "O mnie",
     h1: "AI Product Engineer — inżynier AI, który rozumie biznes",
     intro:
-      "Nazywam się Piotr Wesołowski. Jako AI Product Engineer łączę trzy rzeczy, które zwykle są rozdzielone między różne osoby: zrozumienie problemu biznesowego, zaprojektowanie produktu i zbudowanie systemu, który działa w produkcji.",
+      "Nazywam się Piotr Wesołowski. Jako AI Product Engineer łączę trzy rzeczy, które zwykle są rozdzielone między różne osoby: zrozumienie problemu biznesowego, zaprojektowanie produktu i zbudowanie systemu, który realnie działa w firmie.",
     sections: [
       {
         title: "Czym jest AI Product Engineer?",
@@ -208,7 +208,7 @@ export const pl = {
         title: "Doświadczenie",
         paragraphs: [
           "W branży IT działam od 2010 roku: jako software engineer, team lead i engineering manager. Technologie: Java, Node.js, TypeScript, AWS, frontend i aplikacje PWA. Prowadziłem zespoły i projektowałem systemy, w których liczą się wydajność, jakość kodu i skalowalność.",
-          "Rozwijam własny branżowy SaaS zintegrowany z Claude przez MCP, który działa w produkcji. Na co dzień korzystam z tych samych rozwiązań, które wdrażam u klientów.",
+          "Rozwijam własny branżowy SaaS zintegrowany z Claude przez MCP. Na co dzień korzystam z tych samych rozwiązań, które wdrażam u klientów.",
           // TODO: dopisz branże i nazwę SaaS (jeśli chcesz je ujawnić).
         ],
       },

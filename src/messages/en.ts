@@ -5,7 +5,7 @@ export const en: Messages = {
   meta: {
     title: "AI Product Engineer — an AI engineer who understands business | Piotr Wesołowski",
     description:
-      "Piotr Wesołowski, AI Product Engineer. AI implementation from business problem to a production system: AI audit, agents and Claude Skills for document automation, MCP integration with your business system.",
+      "Piotr Wesołowski, AI Product Engineer. AI implementation from business problem to a working system: AI audit, agents and Claude Skills for document automation, MCP integration with your business system.",
     ogTagline: "I implement AI that genuinely takes work off your company's plate",
   },
 
@@ -34,7 +34,7 @@ export const en: Messages = {
     role: "AI Product Engineer",
     h1: "AI Product Engineer — an AI engineer who understands business",
     lead: "I implement AI that genuinely takes work off your company's plate.",
-    sub: "I'm a software engineer, not an AI marketer. I start with the business problem and finish with a system that runs in production and delivers a measurable result.",
+    sub: "I'm a software engineer, not an AI marketer. I start with the business problem and finish with a working system that delivers a measurable result.",
     photoAlt: "Piotr Wesołowski",
   },
 
@@ -94,7 +94,7 @@ export const en: Messages = {
         steps: [
           { title: "Pick a process", text: "We start with the one process that hurts the most." },
           { title: "Prototype on your documents", text: "I measure accuracy on real examples." },
-          { title: "Production rollout", text: "Integration, validation, monitoring and error handling." },
+          { title: "Rollout in your company", text: "Integration, validation, monitoring and error handling." },
           { title: "Support and growth", text: "Fixes after the first weeks, then the next processes." },
         ],
       },
@@ -165,8 +165,8 @@ export const en: Messages = {
     eyebrow: "About",
     title: "An engineer who implements, not just advises",
     paragraphs: [
-      "I've worked in IT since 2010 as a software engineer, team lead and engineering manager. I build Java and Node.js backends, TypeScript, AWS, as well as frontend and PWAs. I know production from the side you don't see in a demo: performance, security, maintenance.",
-      "I develop my own industry SaaS that runs in production and integrates with Claude via MCP. What I offer clients, I test on my own product first.",
+      "I've worked in IT since 2010 as a software engineer, team lead and engineering manager. I build Java and Node.js backends, TypeScript, AWS, as well as frontend and PWAs. I know what makes a system succeed beyond the demo: performance, security, maintenance.",
+      "I develop my own industry SaaS integrated with Claude via MCP. What I offer clients, I test on my own product first.",
     ],
     stackLabel: "Technologies",
     stack: ["Java", "Node.js", "TypeScript", "AWS", "Frontend / PWA", "Claude", "MCP"],
@@ -181,7 +181,7 @@ export const en: Messages = {
     eyebrow: "About",
     h1: "AI Product Engineer — an AI engineer who understands business",
     intro:
-      "I'm Piotr Wesołowski. As an AI Product Engineer I combine three things that are usually split between different people: understanding the business problem, designing the product and building a system that runs in production.",
+      "I'm Piotr Wesołowski. As an AI Product Engineer I combine three things that are usually split between different people: understanding the business problem, designing the product and building a system that genuinely works in the business.",
     sections: [
       {
         title: "What is an AI Product Engineer?",
@@ -202,7 +202,7 @@ export const en: Messages = {
         title: "Experience",
         paragraphs: [
           "I've worked in IT since 2010: as a software engineer, team lead and engineering manager. Technologies: Java, Node.js, TypeScript, AWS, frontend and PWAs. I've led teams and designed systems where performance, code quality and scalability matter.",
-          "I develop my own industry SaaS integrated with Claude via MCP that runs in production. I use the same solutions every day that I implement for clients.",
+          "I develop my own industry SaaS integrated with Claude via MCP. I use the same solutions every day that I implement for clients.",
           // TODO: add industries and SaaS name (if you want to disclose them).
         ],
       },
