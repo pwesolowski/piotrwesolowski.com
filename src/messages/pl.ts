@@ -171,7 +171,7 @@ export const pl = {
     eyebrow: "O mnie",
     title: "Inżynier, który wdraża, a nie tylko doradza",
     paragraphs: [
-      "Od lat buduję oprogramowanie: backend w Javie i Node.js, TypeScript, chmurę AWS, a także frontend i aplikacje PWA. Znam produkcję od strony, której nie widać na demo: wydajność, bezpieczeństwo, utrzymanie.",
+      "W branży IT działam od 2010 roku jako software engineer, team lead i engineering manager. Buduję backend w Javie i Node.js, TypeScript, chmurę AWS, a także frontend i aplikacje PWA. Znam produkcję od strony, której nie widać na demo: wydajność, bezpieczeństwo, utrzymanie.",
       "Rozwijam własny branżowy SaaS, który działa w produkcji i jest zintegrowany z Claude przez MCP. To, co proponuję klientom, najpierw sprawdzam u siebie.",
     ],
     stackLabel: "Technologie",
@@ -207,9 +207,9 @@ export const pl = {
       {
         title: "Doświadczenie",
         paragraphs: [
-          "Mam za sobą lata pracy jako inżynier oprogramowania: Java, Node.js, TypeScript, AWS, frontend i aplikacje PWA. Projektowałem systemy, w których liczą się wydajność, jakość kodu i skalowalność.",
+          "W branży IT działam od 2010 roku: jako software engineer, team lead i engineering manager. Technologie: Java, Node.js, TypeScript, AWS, frontend i aplikacje PWA. Prowadziłem zespoły i projektowałem systemy, w których liczą się wydajność, jakość kodu i skalowalność.",
           "Rozwijam własny branżowy SaaS zintegrowany z Claude przez MCP, który działa w produkcji. Na co dzień korzystam z tych samych rozwiązań, które wdrażam u klientów.",
-          // TODO: dopisz konkretne lata doświadczenia, branże i nazwę SaaS (jeśli chcesz je ujawnić).
+          // TODO: dopisz branże i nazwę SaaS (jeśli chcesz je ujawnić).
         ],
       },
       {
