@@ -1,0 +1,21 @@
+{
+  "id": "placeholder-3",
+  "order": 3,
+  "draft": true,
+  "url": "https://pioter.ai",
+  "tags": ["TODO"],
+  "pl": {
+    "title": "TODO: tytuł realizacji 3",
+    "client": "TODO: branża / typ klienta",
+    "problem": "TODO: jaki problem miał klient (1–2 zdania).",
+    "solution": "TODO: co zbudowałeś i jak (1–2 zdania).",
+    "result": "TODO: mierzalny efekt — tylko prawdziwe liczby."
+  },
+  "en": {
+    "title": "TODO: case study title 3",
+    "client": "TODO: industry / client type",
+    "problem": "TODO: the client's problem (1–2 sentences).",
+    "solution": "TODO: what you built and how (1–2 sentences).",
+    "result": "TODO: measurable result — real numbers only."
+  }
+}
