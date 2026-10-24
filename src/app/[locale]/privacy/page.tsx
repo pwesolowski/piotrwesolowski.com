@@ -24,7 +24,7 @@ export default async function PrivacyPage({ params }: { params: LocaleParams }) 
 
   return (
     <Container className="max-w-3xl space-y-10 py-12 sm:py-20">
-      <h1 className="text-4xl font-semibold tracking-tight">{t.privacy.h1}</h1>
+      <h1 className="text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">{t.privacy.h1}</h1>
       {t.privacy.sections.map((section) => (
         <section key={section.title} className="space-y-2">
           <h2 className="text-xl font-semibold">{section.title}</h2>

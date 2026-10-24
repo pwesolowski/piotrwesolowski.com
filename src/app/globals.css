@@ -43,6 +43,17 @@
   }
 }
 
+/* Translucent chrome (header, mobile CTA bar): content scrolls underneath. */
+@utility material {
+  background-color: color-mix(in oklab, var(--background) 72%, transparent);
+  backdrop-filter: saturate(180%) blur(20px);
+
+  @media (prefers-reduced-transparency: reduce) {
+    background-color: var(--background);
+    backdrop-filter: none;
+  }
+}
+
 /* Reveal-on-scroll without JS; only where supported and motion is OK. */
 @media (prefers-reduced-motion: no-preference) {
   @supports (animation-timeline: view()) {

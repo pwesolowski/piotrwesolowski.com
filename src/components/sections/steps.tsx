@@ -14,7 +14,7 @@ export function Steps({ steps, className }: { steps: Step[]; className?: string 
               className="absolute top-12 bottom-[-2rem] left-5 w-px bg-border lg:top-5 lg:right-[-1.5rem] lg:bottom-auto lg:left-12 lg:h-px lg:w-auto"
             />
           ) : null}
-          <span className="relative z-10 flex size-10 shrink-0 items-center justify-center rounded-full border-2 border-primary bg-background text-sm font-semibold text-primary-text">
+          <span className="relative z-10 flex size-10 shrink-0 items-center justify-center rounded-full bg-background text-sm font-semibold text-primary-text shadow-sm">
             {index + 1}
           </span>
           <div className="space-y-1.5">

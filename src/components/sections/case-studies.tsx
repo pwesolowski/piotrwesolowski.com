@@ -29,7 +29,7 @@ export function CaseStudies({ locale, t, studies }: CaseStudiesProps) {
           ];
 
           return (
-            <article key={study.id} className="reveal flex flex-col gap-5 rounded-2xl border bg-card p-6">
+            <article key={study.id} className="reveal flex flex-col gap-5 rounded-3xl bg-muted p-7">
               <div className="space-y-2">
                 {study.draft ? <Badge className="bg-destructive text-destructive-foreground">{t.work.draft}</Badge> : null}
                 <p className="text-sm text-muted-foreground">{copy.client}</p>

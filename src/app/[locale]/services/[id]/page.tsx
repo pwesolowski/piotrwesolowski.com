@@ -51,7 +51,7 @@ export default async function ServicePage({ params }: { params: ServiceParams })
 
   return (
     <>
-      <section className="pt-12 pb-16 sm:pt-20 sm:pb-20">
+      <section className="pt-16 pb-20 sm:pt-28 sm:pb-24">
         <Container className="max-w-4xl space-y-6">
           <Link
             href={href({ page: "home" }, locale, "uslugi")}
@@ -59,11 +59,11 @@ export default async function ServicePage({ params }: { params: ServiceParams })
           >
             ← {t.servicePage.backToServices}
           </Link>
-          <p className="flex items-center gap-2 text-sm font-semibold uppercase tracking-wider text-primary-text">
+          <p className="flex items-center gap-2 text-sm font-semibold text-primary-text">
             <ServiceIcon id={service.id} className="size-4" />
             {copy.title}
           </p>
-          <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-5xl">
+          <h1 className="text-4xl font-semibold leading-[1.05] tracking-[-0.03em] text-balance sm:text-6xl">
             {withKeyword("{Keyword}", keyword)}
           </h1>
           <p className="text-xl leading-relaxed text-muted-foreground text-pretty">
@@ -81,14 +81,14 @@ export default async function ServicePage({ params }: { params: ServiceParams })
         </Container>
       </section>
 
-      <Section className="bg-muted/40 py-16 sm:py-20">
+      <Section className="bg-muted">
         <div className="grid gap-10 lg:grid-cols-2">
           {[
             { title: t.servicePage.forWhom, items: copy.forWhom },
             { title: t.servicePage.deliverables, items: copy.deliverables },
           ].map((list) => (
             <div key={list.title} className="reveal space-y-5">
-              <h2 className="text-2xl font-semibold tracking-tight">{list.title}</h2>
+              <h2 className="text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">{list.title}</h2>
               <ul className="space-y-3">
                 {list.items.map((item) => (
                   <li key={item} className="flex gap-3 leading-relaxed">
@@ -114,7 +114,7 @@ export default async function ServicePage({ params }: { params: ServiceParams })
             <Link
               key={other.id}
               href={href({ page: "service", id: other.id }, locale)}
-              className="group flex gap-4 rounded-2xl border bg-card p-6 transition-colors hover:border-primary/60"
+              className="group flex gap-4 rounded-3xl bg-muted p-7 transition-[background-color,transform] duration-200 ease-out hover:bg-accent active:scale-[0.99]"
             >
               <ServiceIcon id={other.id} className="mt-1 size-5 shrink-0 text-primary-text" />
               <div className="space-y-1">

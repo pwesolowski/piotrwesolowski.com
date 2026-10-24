@@ -35,7 +35,7 @@ export function TrustBar({ t }: { t: Messages }) {
   if (industries.length === 0 && clients.length === 0) return null;
 
   return (
-    <section aria-label={t.trust.label} className="border-y bg-muted/40 py-8">
+    <section aria-label={t.trust.label} className="border-y bg-muted py-8">
       <Container className="flex flex-col gap-6">
         {industries.length > 0 ? <TrustList label={t.trust.label} items={industries} /> : null}
         {clients.length > 0 ? <TrustList label={t.trust.clientsLabel} items={clients} /> : null}

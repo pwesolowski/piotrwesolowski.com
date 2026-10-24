@@ -9,58 +9,59 @@
  * - next/font Inter exposed as CSS variable `--font-inter`
  * - next-themes (or similar) toggling `.dark` on <html>
  *
- * One accent hue (indigo). `--primary` is the fill for buttons/CTA,
- * `--primary-text` is the accessible accent for text on `--background`.
+ * Light, Apple-inspired palette: white surfaces, #f5f5f7 sections, graphite
+ * text and a single blue accent. `--primary` is the fill for buttons/CTA,
+ * `--primary-text` is the accessible accent for text (AA on white and muted).
  */
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 :root {
-  --radius: 0.75rem;
+  --radius: 0.875rem;
 
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0.005 285.8);
-  --card: oklch(0.985 0.002 285.8);
+  --background: #ffffff;
+  --foreground: #1d1d1f;
+  --card: #ffffff;
   --card-foreground: var(--foreground);
-  --popover: oklch(1 0 0);
+  --popover: #ffffff;
   --popover-foreground: var(--foreground);
-  --primary: oklch(0.511 0.262 276.97);
-  --primary-foreground: oklch(0.985 0 0);
-  --primary-text: oklch(0.457 0.24 277.02);
-  --secondary: oklch(0.967 0.003 286.4);
-  --secondary-foreground: oklch(0.21 0.006 285.9);
-  --muted: oklch(0.967 0.003 286.4);
-  --muted-foreground: oklch(0.47 0.014 285.9);
-  --accent: oklch(0.962 0.018 272.3);
-  --accent-foreground: oklch(0.21 0.006 285.9);
-  --destructive: oklch(0.577 0.245 27.33);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(0.92 0.004 286.3);
-  --input: oklch(0.92 0.004 286.3);
-  --ring: oklch(0.585 0.233 277.12);
+  --primary: #0071e3;
+  --primary-foreground: #ffffff;
+  --primary-text: #0066cc;
+  --secondary: #f5f5f7;
+  --secondary-foreground: #1d1d1f;
+  --muted: #f5f5f7;
+  --muted-foreground: #6e6e73;
+  --accent: #eef4fd;
+  --accent-foreground: #1d1d1f;
+  --destructive: #d70015;
+  --destructive-foreground: #ffffff;
+  --border: #e8e8ed;
+  --input: #d2d2d7;
+  --ring: #0071e3;
 }
 
 .dark {
-  --background: oklch(0.141 0.005 285.8);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.18 0.006 285.9);
+  --background: #000000;
+  --foreground: #f5f5f7;
+  --card: #1c1c1e;
   --card-foreground: var(--foreground);
-  --popover: oklch(0.18 0.006 285.9);
+  --popover: #1c1c1e;
   --popover-foreground: var(--foreground);
-  --primary: oklch(0.511 0.262 276.97);
-  --primary-foreground: oklch(0.985 0 0);
-  --primary-text: oklch(0.785 0.115 274.71);
-  --secondary: oklch(0.274 0.006 286);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.274 0.006 286);
-  --muted-foreground: oklch(0.72 0.015 286.1);
-  --accent: oklch(0.257 0.09 281.29);
-  --accent-foreground: oklch(0.985 0 0);
-  --destructive: oklch(0.637 0.237 25.33);
-  --destructive-foreground: oklch(0.985 0 0);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.673 0.182 276.94);
+  --primary: #0071e3;
+  --primary-foreground: #ffffff;
+  --primary-text: #2997ff;
+  --secondary: #2c2c2e;
+  --secondary-foreground: #f5f5f7;
+  --muted: #161617;
+  --muted-foreground: #a1a1a6;
+  --accent: #0f2338;
+  --accent-foreground: #f5f5f7;
+  --destructive: #ff453a;
+  --destructive-foreground: #ffffff;
+  --border: rgb(255 255 255 / 12%);
+  --input: rgb(255 255 255 / 18%);
+  --ring: #2997ff;
 }
 
 @theme inline {
@@ -92,4 +93,5 @@
   --radius-lg: var(--radius);
   --radius-xl: calc(var(--radius) + 4px);
   --radius-2xl: calc(var(--radius) + 8px);
+  --radius-3xl: calc(var(--radius) + 14px);
 }

@@ -16,7 +16,7 @@ export function Testimonials({ locale, t }: TestimonialsProps) {
     <Section id="referencje" eyebrow={t.testimonials.eyebrow} title={t.testimonials.title}>
       <div className="grid gap-4 md:grid-cols-2">
         {siteConfig.testimonials.map((item) => (
-          <figure key={item.author} className="reveal flex flex-col gap-6 rounded-2xl border bg-card p-6 sm:p-8">
+          <figure key={item.author} className="reveal flex flex-col gap-6 rounded-3xl bg-muted p-7 sm:p-9">
             <blockquote className="flex-1 text-lg leading-relaxed">„{item.quote[locale]}”</blockquote>
             <figcaption className="text-sm">
               <span className="font-semibold">{item.author}</span>

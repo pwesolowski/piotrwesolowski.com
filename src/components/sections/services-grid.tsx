@@ -35,15 +35,15 @@ export function ServicesGrid({ locale, t }: ServicesGridProps) {
               key={service.id}
               href={href({ page: "service", id: service.id }, locale)}
               className={cn(
-                "reveal group flex flex-col gap-6 rounded-2xl border bg-card p-6 transition-colors hover:border-primary/60 sm:p-8",
+                "reveal group flex flex-col gap-6 rounded-3xl bg-muted p-7 transition-[background-color,transform] duration-200 ease-out hover:bg-accent active:scale-[0.99] sm:p-9",
                 spans[service.id],
               )}
             >
-              <span className="inline-flex size-11 items-center justify-center rounded-xl bg-accent text-primary-text">
+              <span className="inline-flex size-11 items-center justify-center rounded-full bg-background text-primary-text">
                 <ServiceIcon id={service.id} className="size-5" />
               </span>
               <div className="flex-1 space-y-2">
-                <h3 className="text-xl font-semibold">{copy.title}</h3>
+                <h3 className="text-2xl font-semibold tracking-[-0.01em]">{copy.title}</h3>
                 <p className="leading-relaxed text-muted-foreground">{copy.short}</p>
               </div>
               <ul className="flex flex-wrap gap-2">
@@ -61,15 +61,14 @@ export function ServicesGrid({ locale, t }: ServicesGridProps) {
           );
         })}
 
-        <div className="reveal flex flex-col justify-between gap-6 rounded-2xl bg-primary p-6 text-primary-foreground sm:p-8 md:col-span-2 lg:col-span-1">
+        <div className="reveal flex flex-col justify-between gap-6 rounded-3xl bg-accent p-7 sm:p-9 md:col-span-2 lg:col-span-1">
           <div className="space-y-2">
-            <p className="text-xl font-semibold">{t.servicePage.ctaTitle}</p>
-            <p className="leading-relaxed opacity-90">{t.servicePage.ctaText}</p>
+            <p className="text-2xl font-semibold tracking-[-0.01em]">{t.servicePage.ctaTitle}</p>
+            <p className="leading-relaxed text-muted-foreground">{t.servicePage.ctaText}</p>
           </div>
           <CalendlyButton
             label={t.cta.book}
             newTabLabel={t.cta.newTab}
-            variant="secondary"
             className="self-start"
           />
         </div>

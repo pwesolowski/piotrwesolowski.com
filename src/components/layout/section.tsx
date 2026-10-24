@@ -17,18 +17,18 @@ export function Section({ id, eyebrow, title, description, className, children }
   const headingId = id ? `${id}-title` : undefined;
 
   return (
-    <section id={id} aria-labelledby={title ? headingId : undefined} className={cn("py-16 sm:py-24", className)}>
+    <section id={id} aria-labelledby={title ? headingId : undefined} className={cn("py-20 sm:py-28", className)}>
       <Container>
         {title ? (
           <div className="reveal mb-10 max-w-2xl space-y-3 sm:mb-14">
             {eyebrow ? (
-              <p className="text-sm font-semibold uppercase tracking-wider text-primary-text">{eyebrow}</p>
+              <p className="text-sm font-semibold text-primary-text">{eyebrow}</p>
             ) : null}
-            <h2 id={headingId} className="text-3xl font-semibold tracking-tight text-balance sm:text-4xl">
+            <h2 id={headingId} className="text-3xl font-semibold leading-tight tracking-[-0.02em] text-balance sm:text-5xl">
               {title}
             </h2>
             {description ? (
-              <p className="text-lg leading-relaxed text-muted-foreground text-pretty">{description}</p>
+              <p className="text-lg leading-relaxed text-muted-foreground text-pretty sm:text-xl">{description}</p>
             ) : null}
           </div>
         ) : null}

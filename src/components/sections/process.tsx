@@ -10,7 +10,7 @@ export function Process({ t }: { t: Messages }) {
       eyebrow={t.process.eyebrow}
       title={t.process.title}
       description={t.process.description}
-      className="bg-muted/40"
+      className="bg-muted"
     >
       <Steps steps={t.process.steps} />
     </Section>

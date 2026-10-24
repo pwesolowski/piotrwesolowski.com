@@ -31,7 +31,7 @@ export function ContactForm({ locale, t, privacyHref }: ContactFormProps) {
 
   if (status === "success") {
     return (
-      <p role="status" className="rounded-xl border bg-accent p-6 text-accent-foreground">
+      <p role="status" className="rounded-2xl bg-accent p-6 text-accent-foreground">
         {t.success}
       </p>
     );

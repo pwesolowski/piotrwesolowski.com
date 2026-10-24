@@ -15,11 +15,11 @@ type ContactSectionProps = {
 
 export function ContactSection({ locale, t }: ContactSectionProps) {
   return (
-    <Section id="kontakt" className="bg-muted/40">
+    <Section id="kontakt" className="bg-muted">
       <div className="grid gap-10 lg:grid-cols-2 lg:gap-16">
         <div className="reveal space-y-6">
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary-text">{t.contact.eyebrow}</p>
-          <h2 className="text-3xl font-semibold tracking-tight text-balance sm:text-4xl">{t.contact.title}</h2>
+          <p className="text-sm font-semibold text-primary-text">{t.contact.eyebrow}</p>
+          <h2 className="text-3xl font-semibold leading-tight tracking-[-0.02em] text-balance sm:text-5xl">{t.contact.title}</h2>
           <p className="text-lg leading-relaxed text-muted-foreground">{t.contact.description}</p>
           <CalendlyButton label={t.cta.book} newTabLabel={t.cta.newTab} />
           <p className="flex flex-wrap items-center gap-2 text-sm text-muted-foreground">
@@ -31,7 +31,7 @@ export function ContactSection({ locale, t }: ContactSectionProps) {
           </p>
         </div>
 
-        <div className="reveal rounded-2xl border bg-card p-6 sm:p-8">
+        <div className="reveal rounded-3xl bg-card p-7 shadow-sm sm:p-9">
           <h3 className="mb-6 text-lg font-semibold">{t.contact.form.title}</h3>
           <ContactForm locale={locale} t={t.contact.form} privacyHref={href({ page: "privacy" }, locale)} />
         </div>

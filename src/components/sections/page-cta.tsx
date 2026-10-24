@@ -5,14 +5,14 @@ import type { Messages } from "@/messages";
 /** Closing call-to-action band used on subpages. */
 export function PageCta({ t }: { t: Messages }) {
   return (
-    <section className="py-16 sm:py-24">
+    <section className="py-20 sm:py-28">
       <Container>
-        <div className="reveal flex flex-col items-start gap-6 rounded-2xl bg-primary p-8 text-primary-foreground sm:p-12 lg:flex-row lg:items-center lg:justify-between">
+        <div className="reveal flex flex-col items-start gap-6 rounded-3xl bg-muted p-8 sm:p-14 lg:flex-row lg:items-center lg:justify-between">
           <div className="max-w-2xl space-y-2">
-            <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{t.servicePage.ctaTitle}</h2>
-            <p className="text-lg leading-relaxed opacity-90">{t.servicePage.ctaText}</p>
+            <h2 className="text-2xl font-semibold tracking-[-0.02em] sm:text-4xl">{t.servicePage.ctaTitle}</h2>
+            <p className="text-lg leading-relaxed text-muted-foreground">{t.servicePage.ctaText}</p>
           </div>
-          <CalendlyButton label={t.cta.book} newTabLabel={t.cta.newTab} variant="secondary" />
+          <CalendlyButton label={t.cta.book} newTabLabel={t.cta.newTab} />
         </div>
       </Container>
     </section>

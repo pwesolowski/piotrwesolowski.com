@@ -27,11 +27,11 @@ export default async function AboutPage({ params }: { params: LocaleParams }) {
 
   return (
     <>
-      <section className="pt-12 pb-12 sm:pt-20">
+      <section className="pt-16 pb-12 sm:pt-28">
         <Container className="grid items-center gap-10 lg:grid-cols-[minmax(0,3fr)_minmax(0,2fr)] lg:gap-16">
           <div className="space-y-6">
-            <p className="text-sm font-semibold uppercase tracking-wider text-primary-text">{t.aboutPage.eyebrow}</p>
-            <h1 className="text-4xl font-semibold tracking-tight text-balance sm:text-5xl">{t.aboutPage.h1}</h1>
+            <p className="text-sm font-semibold text-primary-text">{t.aboutPage.eyebrow}</p>
+            <h1 className="text-4xl font-semibold leading-[1.05] tracking-[-0.03em] text-balance sm:text-6xl">{t.aboutPage.h1}</h1>
             <p className="text-xl leading-relaxed text-muted-foreground text-pretty">{t.aboutPage.intro}</p>
             <ul className="flex flex-wrap gap-2">
               {t.about.stack.map((item) => (
@@ -41,7 +41,7 @@ export default async function AboutPage({ params }: { params: LocaleParams }) {
               ))}
             </ul>
           </div>
-          <div className="mx-auto w-full max-w-sm overflow-hidden rounded-2xl border bg-card">
+          <div className="mx-auto w-full max-w-sm overflow-hidden rounded-3xl shadow-xl shadow-black/10">
             <Image
               src="/profileStanding.jpg"
               alt={t.about.photoAlt}
@@ -58,7 +58,7 @@ export default async function AboutPage({ params }: { params: LocaleParams }) {
       <Container className="max-w-3xl space-y-14 py-12">
         {t.aboutPage.sections.map((section) => (
           <section key={section.title} className="reveal space-y-4">
-            <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">{section.title}</h2>
+            <h2 className="text-2xl font-semibold tracking-[-0.02em] sm:text-3xl">{section.title}</h2>
             {section.paragraphs.map((paragraph) => (
               <p key={paragraph} className="text-lg leading-relaxed text-muted-foreground">
                 {paragraph}
@@ -76,7 +76,7 @@ export default async function AboutPage({ params }: { params: LocaleParams }) {
                   href={social.url}
                   target="_blank"
                   rel="noopener me"
-                  className="inline-flex h-10 items-center rounded-lg border px-4 text-sm font-semibold hover:bg-accent"
+                  className="inline-flex h-10 items-center rounded-full border border-input px-5 text-sm font-medium transition-colors hover:bg-muted"
                 >
                   {social.label}
                 </a>

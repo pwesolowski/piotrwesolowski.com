@@ -13,7 +13,7 @@ type SiteFooterProps = {
 
 export function SiteFooter({ locale, t }: SiteFooterProps) {
   return (
-    <footer className="border-t pb-24 md:pb-0">
+    <footer className="border-t bg-muted pb-24 md:pb-0">
       <Container className="flex flex-col gap-8 py-10 text-sm text-muted-foreground md:flex-row md:items-start md:justify-between">
         <div className="space-y-2">
           <p className="font-semibold text-foreground">{siteConfig.name}</p>

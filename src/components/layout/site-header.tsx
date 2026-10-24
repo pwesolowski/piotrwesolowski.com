@@ -26,7 +26,7 @@ export function SiteHeader({ locale, t }: SiteHeaderProps) {
   ];
 
   return (
-    <header className="sticky top-0 z-40 border-b bg-background/85 backdrop-blur supports-[backdrop-filter]:bg-background/70">
+    <header className="material sticky top-0 z-40 border-b border-border/70">
       <Container className="flex h-16 items-center justify-between gap-4">
         <Link href={href(home, locale)} className="flex flex-col leading-tight">
           <span className="font-semibold">Piotr Wesołowski</span>
@@ -39,7 +39,7 @@ export function SiteHeader({ locale, t }: SiteHeaderProps) {
               <li key={link.href}>
                 <Link
                   href={link.href}
-                  className="rounded-lg px-3 py-2 text-muted-foreground transition-colors hover:text-foreground"
+                  className="rounded-full px-3 py-2 text-muted-foreground transition-colors hover:text-foreground"
                 >
                   {link.label}
                 </Link>
@@ -60,19 +60,19 @@ export function SiteHeader({ locale, t }: SiteHeaderProps) {
 
           <details className="group relative lg:hidden">
             <summary
-              className="inline-flex size-10 cursor-pointer list-none items-center justify-center rounded-lg hover:bg-accent [&::-webkit-details-marker]:hidden"
+              className="inline-flex size-10 cursor-pointer list-none items-center justify-center rounded-full hover:bg-muted [&::-webkit-details-marker]:hidden"
               aria-label={t.nav.menu}
             >
               <Menu className="size-5" aria-hidden="true" />
             </summary>
             <nav
               aria-label={t.nav.menu}
-              className="absolute right-0 top-12 w-56 rounded-xl border bg-popover p-2 shadow-lg"
+              className="absolute right-0 top-12 w-56 rounded-2xl border bg-popover p-2 shadow-xl shadow-black/5"
             >
               <ul className="flex flex-col text-sm">
                 {links.map((link) => (
                   <li key={link.href}>
-                    <a href={link.href} className="block rounded-lg px-3 py-2.5 hover:bg-accent">
+                    <a href={link.href} className="block rounded-xl px-3 py-2.5 hover:bg-muted">
                       {link.label}
                     </a>
                   </li>

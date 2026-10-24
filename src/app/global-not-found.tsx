@@ -19,7 +19,7 @@ export default function GlobalNotFound() {
   const en = getMessages("en").notFound;
 
   return (
-    <html lang="pl" className={`dark ${inter.variable}`}>
+    <html lang="pl" className={inter.variable}>
       <body className="flex min-h-screen items-center justify-center px-4">
         <main className="max-w-md space-y-8 text-center">
           <p className="text-6xl font-semibold text-primary-text">404</p>

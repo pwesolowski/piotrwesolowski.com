@@ -21,9 +21,9 @@ export function AboutTeaser({ locale, t }: AboutTeaserProps) {
   ].filter((link) => link.url);
 
   return (
-    <Section id="o-mnie" className="bg-muted/40">
+    <Section id="o-mnie" className="bg-muted">
       <div className="grid items-center gap-10 lg:grid-cols-[minmax(0,2fr)_minmax(0,3fr)] lg:gap-16">
-        <div className="reveal mx-auto w-full max-w-sm overflow-hidden rounded-2xl border bg-card">
+        <div className="reveal mx-auto w-full max-w-sm overflow-hidden rounded-3xl shadow-xl shadow-black/10">
           <Image
             src="/profileStanding.jpg"
             alt={t.about.photoAlt}
@@ -35,8 +35,8 @@ export function AboutTeaser({ locale, t }: AboutTeaserProps) {
         </div>
 
         <div className="reveal space-y-6">
-          <p className="text-sm font-semibold uppercase tracking-wider text-primary-text">{t.about.eyebrow}</p>
-          <h2 className="text-3xl font-semibold tracking-tight text-balance sm:text-4xl">{t.about.title}</h2>
+          <p className="text-sm font-semibold text-primary-text">{t.about.eyebrow}</p>
+          <h2 className="text-3xl font-semibold leading-tight tracking-[-0.02em] text-balance sm:text-5xl">{t.about.title}</h2>
           {t.about.paragraphs.map((paragraph) => (
             <p key={paragraph} className="text-lg leading-relaxed text-muted-foreground">
               {paragraph}
