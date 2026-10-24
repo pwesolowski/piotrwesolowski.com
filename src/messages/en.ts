@@ -166,7 +166,7 @@ export const en: Messages = {
     title: "An engineer who implements, not just advises",
     paragraphs: [
       "I've worked in IT since 2010 as a software engineer, team lead and engineering manager. I build Java and Node.js backends, TypeScript, AWS, as well as frontend and PWAs. I know what makes a system succeed beyond the demo: performance, security, maintenance.",
-      "I develop my own industry SaaS integrated with Claude via MCP. What I offer clients, I test on my own product first.",
+      "I develop my own industry SaaS. What I offer clients, I test on my own product first.",
     ],
     stackLabel: "Technologies",
     stack: ["Java", "Node.js", "TypeScript", "AWS", "Frontend / PWA", "Claude", "MCP"],
@@ -202,7 +202,7 @@ export const en: Messages = {
         title: "Experience",
         paragraphs: [
           "I've worked in IT since 2010: as a software engineer, team lead and engineering manager. Technologies: Java, Node.js, TypeScript, AWS, frontend and PWAs. I've led teams and designed systems where performance, code quality and scalability matter.",
-          "I develop my own industry SaaS integrated with Claude via MCP. I use the same solutions every day that I implement for clients.",
+          "I develop my own industry SaaS. I use the same solutions every day that I implement for clients.",
           // TODO: add industries and SaaS name (if you want to disclose them).
         ],
       },
