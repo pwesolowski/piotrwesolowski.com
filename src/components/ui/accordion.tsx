@@ -1,61 +1,49 @@
-"use client";
-
-import * as AccordionPrimitive from "@radix-ui/react-accordion";
 import type { ComponentProps } from "react";
 
 import { cn } from "@/lib/cn";
 
-const Accordion = AccordionPrimitive.Root;
+/*
+ * shadcn-style Accordion on native <details>/<summary>: zero client JS,
+ * keyboard and screen-reader support built in. Items sharing the same
+ * `name` behave as a single-open accordion.
+ */
 
-function AccordionItem({ className, ...props }: ComponentProps<typeof AccordionPrimitive.Item>) {
-  return <AccordionPrimitive.Item className={cn("border-b", className)} {...props} />;
+function Accordion({ className, ...props }: ComponentProps<"div">) {
+  return <div className={cn("w-full", className)} {...props} />;
 }
 
-function AccordionTrigger({
-  className,
-  children,
-  ...props
-}: ComponentProps<typeof AccordionPrimitive.Trigger>) {
-  return (
-    <AccordionPrimitive.Header className="flex">
-      <AccordionPrimitive.Trigger
-        className={cn(
-          "flex flex-1 items-center justify-between gap-4 py-5 text-left text-base font-medium transition-colors hover:text-primary-text [&[data-state=open]>svg]:rotate-180",
-          className,
-        )}
-        {...props}
-      >
-        {children}
-        <svg
-          aria-hidden="true"
-          viewBox="0 0 24 24"
-          className="size-4 shrink-0 text-muted-foreground transition-transform duration-200"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="2"
-          strokeLinecap="round"
-          strokeLinejoin="round"
-        >
-          <path d="m6 9 6 6 6-6" />
-        </svg>
-      </AccordionPrimitive.Trigger>
-    </AccordionPrimitive.Header>
-  );
+function AccordionItem({ className, ...props }: ComponentProps<"details">) {
+  return <details className={cn("group border-b", className)} {...props} />;
 }
 
-function AccordionContent({
-  className,
-  children,
-  ...props
-}: ComponentProps<typeof AccordionPrimitive.Content>) {
+function AccordionTrigger({ className, children, ...props }: ComponentProps<"summary">) {
   return (
-    <AccordionPrimitive.Content
-      className="overflow-hidden text-muted-foreground data-[state=closed]:animate-accordion-up data-[state=open]:animate-accordion-down"
+    <summary
+      className={cn(
+        "flex cursor-pointer list-none items-center justify-between gap-4 py-5 text-left text-base font-medium transition-colors hover:text-primary-text [&::-webkit-details-marker]:hidden",
+        className,
+      )}
       {...props}
     >
-      <div className={cn("pb-5 leading-relaxed", className)}>{children}</div>
-    </AccordionPrimitive.Content>
+      {children}
+      <svg
+        aria-hidden="true"
+        viewBox="0 0 24 24"
+        className="size-4 shrink-0 text-muted-foreground transition-transform duration-200 group-open:rotate-180"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      >
+        <path d="m6 9 6 6 6-6" />
+      </svg>
+    </summary>
   );
+}
+
+function AccordionContent({ className, ...props }: ComponentProps<"div">) {
+  return <div className={cn("pb-5 leading-relaxed text-muted-foreground", className)} {...props} />;
 }
 
 export { Accordion, AccordionContent, AccordionItem, AccordionTrigger };
