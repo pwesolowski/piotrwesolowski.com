@@ -172,7 +172,7 @@ export const pl = {
     title: "Inżynier, który wdraża, a nie tylko doradza",
     paragraphs: [
       "Od lat buduję oprogramowanie: backend w Javie i Node.js, TypeScript, chmurę AWS, a także frontend i aplikacje PWA. Znam produkcję od strony, której nie widać na demo: wydajność, bezpieczeństwo, utrzymanie.",
-      "Prowadzę własną spółkę i rozwijam branżowy SaaS, który działa w produkcji i jest zintegrowany z Claude przez MCP. To, co proponuję klientom, najpierw sprawdzam u siebie.",
+      "Rozwijam własny branżowy SaaS, który działa w produkcji i jest zintegrowany z Claude przez MCP. To, co proponuję klientom, najpierw sprawdzam u siebie.",
     ],
     stackLabel: "Technologie",
     stack: ["Java", "Node.js", "TypeScript", "AWS", "Frontend / PWA", "Claude", "MCP"],
@@ -208,8 +208,8 @@ export const pl = {
         title: "Doświadczenie",
         paragraphs: [
           "Mam za sobą lata pracy jako inżynier oprogramowania: Java, Node.js, TypeScript, AWS, frontend i aplikacje PWA. Projektowałem systemy, w których liczą się wydajność, jakość kodu i skalowalność.",
-          "Prowadzę własną spółkę i rozwijam branżowy SaaS zintegrowany z Claude przez MCP, który działa w produkcji. Na co dzień korzystam z tych samych rozwiązań, które wdrażam u klientów.",
-          // TODO: dopisz konkretne lata doświadczenia, branże, nazwę spółki i SaaS (jeśli chcesz je ujawnić).
+          "Rozwijam własny branżowy SaaS zintegrowany z Claude przez MCP, który działa w produkcji. Na co dzień korzystam z tych samych rozwiązań, które wdrażam u klientów.",
+          // TODO: dopisz konkretne lata doświadczenia, branże i nazwę SaaS (jeśli chcesz je ujawnić).
         ],
       },
       {
@@ -294,7 +294,7 @@ export const pl = {
     h1: "Polityka prywatności",
     notice: "TODO: Ta strona zawiera szkielet. Uzupełnij treść (najlepiej z prawnikiem) przed publikacją.",
     sections: [
-      { title: "Administrator danych", text: "TODO: nazwa spółki, adres, NIP, dane kontaktowe." },
+      { title: "Administrator danych", text: "TODO: imię i nazwisko lub nazwa firmy, adres, NIP, dane kontaktowe." },
       { title: "Jakie dane przetwarzam", text: "TODO: dane z formularza kontaktowego (imię, firma, e-mail, treść wiadomości) oraz korespondencja e-mail." },
       { title: "Cel i podstawa prawna", text: "TODO: odpowiedź na zapytanie i przygotowanie oferty (art. 6 ust. 1 lit. b i f RODO)." },
       { title: "Odbiorcy danych", text: "TODO: dostawca hostingu (Vercel), dostawca obsługi formularza (jeśli zostanie podłączony), Calendly przy umawianiu rozmowy." },

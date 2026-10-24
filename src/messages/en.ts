@@ -166,7 +166,7 @@ export const en: Messages = {
     title: "An engineer who implements, not just advises",
     paragraphs: [
       "I've been building software for years: Java and Node.js backends, TypeScript, AWS, as well as frontend and PWAs. I know production from the side you don't see in a demo: performance, security, maintenance.",
-      "I run my own company and develop an industry SaaS that runs in production and integrates with Claude via MCP. What I offer clients, I test on my own product first.",
+      "I develop my own industry SaaS that runs in production and integrates with Claude via MCP. What I offer clients, I test on my own product first.",
     ],
     stackLabel: "Technologies",
     stack: ["Java", "Node.js", "TypeScript", "AWS", "Frontend / PWA", "Claude", "MCP"],
@@ -202,8 +202,8 @@ export const en: Messages = {
         title: "Experience",
         paragraphs: [
           "I have years of experience as a software engineer: Java, Node.js, TypeScript, AWS, frontend and PWAs. I've designed systems where performance, code quality and scalability matter.",
-          "I run my own company and develop an industry SaaS integrated with Claude via MCP that runs in production. I use the same solutions every day that I implement for clients.",
-          // TODO: add years of experience, industries, company and SaaS name (if you want to disclose them).
+          "I develop my own industry SaaS integrated with Claude via MCP that runs in production. I use the same solutions every day that I implement for clients.",
+          // TODO: add years of experience, industries and SaaS name (if you want to disclose them).
         ],
       },
       {
@@ -288,7 +288,7 @@ export const en: Messages = {
     h1: "Privacy policy",
     notice: "TODO: This page is a skeleton. Fill in the content (ideally with a lawyer) before publishing.",
     sections: [
-      { title: "Data controller", text: "TODO: company name, address, tax ID, contact details." },
+      { title: "Data controller", text: "TODO: full name or business name, address, tax ID, contact details." },
       { title: "What data I process", text: "TODO: contact form data (name, company, email, message) and email correspondence." },
       { title: "Purpose and legal basis", text: "TODO: responding to enquiries and preparing offers (Art. 6(1)(b) and (f) GDPR)." },
       { title: "Recipients", text: "TODO: hosting provider (Vercel), form provider (if connected), Calendly when booking a call." },
