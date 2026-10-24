@@ -230,23 +230,23 @@ export const en: Messages = {
     items: [
       {
         q: "Is my data safe? What about GDPR?",
-        a: "TODO: We agree up front which data goes to the model and which doesn't. I use services that don't train models on customer data and keep system access to the necessary minimum. Describe your approach to data processing agreements, data location and anonymization.",
+        a: "We agree up front which data goes to the model and which doesn't. I use services that don't train models on customer data and keep system access to the necessary minimum. Where needed, we sign a data processing agreement.",
       },
       {
         q: "How much do the AI models cost to run?",
-        a: "TODO: Model costs depend on the number and size of documents or queries processed. During the audit or prototype I estimate them on your data before you decide to roll out.",
+        a: "Model costs depend on the number and size of documents or queries processed. During the audit or prototype I estimate them on your data before you decide to roll out.",
       },
       {
         q: "How long does implementation take?",
-        a: "TODO: It depends on scope. We start with one process and a prototype on real data, and set the full timeline after the audit. Add typical time frames.",
+        a: "It depends on scope. We start with one process and a prototype on real data, and set the full timeline after the audit.",
       },
       {
         q: "Do I need an IT department?",
-        a: "TODO: No. I take care of the technical side; from your side I need someone who knows the process and access to the systems we integrate with.",
+        a: "No. I take care of the technical side; from your side I need someone who knows the process and access to the systems we integrate with.",
       },
       {
         q: "Do you work remotely or on-site?",
-        a: "TODO: Mostly remotely. Workshops and kick-off meetings can happen on-site — add the region and terms.",
+        a: "Mostly remotely. Workshops and kick-off meetings can happen on-site.",
       },
     ],
   },
@@ -286,15 +286,14 @@ export const en: Messages = {
     metaTitle: "Privacy policy",
     metaDescription: "Privacy policy of piotrwesolowski.com.",
     h1: "Privacy policy",
-    notice: "TODO: This page is a skeleton. Fill in the content (ideally with a lawyer) before publishing.",
     sections: [
-      { title: "Data controller", text: "TODO: full name or business name, address, tax ID, contact details." },
-      { title: "What data I process", text: "TODO: contact form data (name, company, email, message) and email correspondence." },
-      { title: "Purpose and legal basis", text: "TODO: responding to enquiries and preparing offers (Art. 6(1)(b) and (f) GDPR)." },
-      { title: "Recipients", text: "TODO: hosting provider (Vercel), form provider (if connected), Calendly when booking a call." },
-      { title: "Analytics", text: "TODO: the site uses Vercel Web Analytics, which does not use cookies or identify users. Verify before publishing." },
-      { title: "Retention", text: "TODO: how long you keep correspondence." },
-      { title: "Your rights", text: "TODO: access, rectification, erasure, restriction, objection, portability, complaint to the supervisory authority." },
+      { title: "Data controller", text: "The controller of personal data is Piotr Wesołowski. Contact: kontakt@piotrwesolowski.com." },
+      { title: "What data I process", text: "Data provided in the contact form (name, company name, email address, message) and data from email correspondence." },
+      { title: "Purpose and legal basis", text: "Responding to enquiries and preparing offers — Art. 6(1)(b) GDPR (steps prior to entering into a contract) and Art. 6(1)(f) GDPR (legitimate interest in handling correspondence)." },
+      { title: "Recipients", text: "Data may be shared with service providers working for this site: the hosting provider (Vercel), the contact form provider and Calendly when you book a call." },
+      { title: "Analytics", text: "This site uses Vercel Web Analytics, which does not use cookies or identify users. Only aggregated, anonymous visit statistics are collected." },
+      { title: "Retention", text: "I keep data for as long as needed to handle the correspondence and then for the limitation period of any potential claims." },
+      { title: "Your rights", text: "You have the right to access, rectify and erase your data, to restrict processing, to data portability and to object. You may also lodge a complaint with the supervisory authority (in Poland: the President of the Personal Data Protection Office)." },
     ],
   },
 

@@ -236,23 +236,23 @@ export const pl = {
     items: [
       {
         q: "Czy moje dane są bezpieczne? Jak jest z RODO?",
-        a: "TODO: Ustalamy na starcie, jakie dane trafiają do modelu, a jakie nie. Korzystam z usług, które nie trenują modeli na danych klientów, a dostęp do systemów ograniczam do niezbędnego minimum. Opisz tu swoje podejście do umowy powierzenia, lokalizacji danych i anonimizacji.",
+        a: "Ustalamy na starcie, jakie dane trafiają do modelu, a jakie nie. Korzystam z usług, które nie trenują modeli na danych klientów, a dostęp do systemów ograniczam do niezbędnego minimum. Gdy to potrzebne, podpisujemy umowę powierzenia przetwarzania danych.",
       },
       {
         q: "Ile kosztuje korzystanie z modeli AI?",
-        a: "TODO: Koszt modeli zależy od liczby i wielkości przetwarzanych dokumentów lub zapytań. W ramach audytu lub prototypu szacuję go na Twoich danych, zanim podejmiesz decyzję o wdrożeniu.",
+        a: "Koszt modeli zależy od liczby i wielkości przetwarzanych dokumentów lub zapytań. W ramach audytu lub prototypu szacuję go na Twoich danych, zanim podejmiesz decyzję o wdrożeniu.",
       },
       {
         q: "Ile trwa wdrożenie?",
-        a: "TODO: Zależy od zakresu. Zaczynamy od jednego procesu i prototypu na prawdziwych danych, a harmonogram całości ustalamy po audycie. Uzupełnij typowe ramy czasowe.",
+        a: "Zależy od zakresu. Zaczynamy od jednego procesu i prototypu na prawdziwych danych, a harmonogram całości ustalamy po audycie.",
       },
       {
         q: "Czy potrzebuję działu IT?",
-        a: "TODO: Nie jest konieczny. Biorę na siebie część techniczną, a od Twojej strony potrzebuję osoby, która zna proces, oraz dostępu do systemów, z którymi integrujemy rozwiązanie.",
+        a: "Nie jest konieczny. Biorę na siebie część techniczną, a od Twojej strony potrzebuję osoby, która zna proces, oraz dostępu do systemów, z którymi integrujemy rozwiązanie.",
       },
       {
         q: "Pracujesz zdalnie czy na miejscu?",
-        a: "TODO: Głównie zdalnie. Warsztaty i spotkania startowe mogą odbyć się na miejscu — uzupełnij, w jakim regionie i na jakich zasadach.",
+        a: "Głównie zdalnie. Warsztaty i spotkania startowe mogą odbyć się na miejscu.",
       },
     ],
   },
@@ -292,15 +292,14 @@ export const pl = {
     metaTitle: "Polityka prywatności",
     metaDescription: "Polityka prywatności serwisu piotrwesolowski.com.",
     h1: "Polityka prywatności",
-    notice: "TODO: Ta strona zawiera szkielet. Uzupełnij treść (najlepiej z prawnikiem) przed publikacją.",
     sections: [
-      { title: "Administrator danych", text: "TODO: imię i nazwisko lub nazwa firmy, adres, NIP, dane kontaktowe." },
-      { title: "Jakie dane przetwarzam", text: "TODO: dane z formularza kontaktowego (imię, firma, e-mail, treść wiadomości) oraz korespondencja e-mail." },
-      { title: "Cel i podstawa prawna", text: "TODO: odpowiedź na zapytanie i przygotowanie oferty (art. 6 ust. 1 lit. b i f RODO)." },
-      { title: "Odbiorcy danych", text: "TODO: dostawca hostingu (Vercel), dostawca obsługi formularza (jeśli zostanie podłączony), Calendly przy umawianiu rozmowy." },
-      { title: "Analityka", text: "TODO: serwis korzysta z Vercel Web Analytics, które nie używa plików cookies i nie identyfikuje użytkowników. Zweryfikuj opis przed publikacją." },
-      { title: "Okres przechowywania", text: "TODO: jak długo przechowujesz korespondencję." },
-      { title: "Twoje prawa", text: "TODO: dostęp, sprostowanie, usunięcie, ograniczenie, sprzeciw, przenoszenie danych, skarga do Prezesa UODO." },
+      { title: "Administrator danych", text: "Administratorem danych osobowych jest Piotr Wesołowski. Kontakt: kontakt@piotrwesolowski.com." },
+      { title: "Jakie dane przetwarzam", text: "Dane podane w formularzu kontaktowym (imię, nazwa firmy, adres e-mail, treść wiadomości) oraz dane z korespondencji e-mail." },
+      { title: "Cel i podstawa prawna", text: "Odpowiedź na zapytanie i przygotowanie oferty — art. 6 ust. 1 lit. b RODO (działania przed zawarciem umowy) oraz art. 6 ust. 1 lit. f RODO (prawnie uzasadniony interes w prowadzeniu korespondencji)." },
+      { title: "Odbiorcy danych", text: "Dane mogą być przekazywane podmiotom świadczącym usługi na rzecz serwisu: dostawcy hostingu (Vercel), dostawcy obsługi formularza kontaktowego oraz Calendly — przy umawianiu rozmowy." },
+      { title: "Analityka", text: "Serwis korzysta z Vercel Web Analytics, które nie używa plików cookies i nie identyfikuje użytkowników. Zbierane są wyłącznie zagregowane, anonimowe statystyki odwiedzin." },
+      { title: "Okres przechowywania", text: "Dane przechowuję przez czas niezbędny do prowadzenia korespondencji, a następnie przez okres przedawnienia ewentualnych roszczeń." },
+      { title: "Twoje prawa", text: "Masz prawo dostępu do swoich danych, ich sprostowania, usunięcia, ograniczenia przetwarzania, przenoszenia danych oraz wniesienia sprzeciwu. Przysługuje Ci także prawo wniesienia skargi do Prezesa Urzędu Ochrony Danych Osobowych." },
     ],
   },
 
