@@ -57,3 +57,16 @@ export const sameAs = [
   ...Object.values(siteConfig.social).filter(Boolean),
   siteConfig.url,
 ];
+
+const socialLabels: Record<keyof typeof siteConfig.social, string> = {
+  linkedin: "LinkedIn",
+  github: "GitHub",
+  youtube: "YouTube",
+  x: "X",
+  pioterAi: "pioter.ai",
+};
+
+/** Configured (non-empty) social profiles, in display order. */
+export const socialLinks = (Object.keys(socialLabels) as (keyof typeof socialLabels)[])
+  .filter((key) => siteConfig.social[key])
+  .map((key) => ({ label: socialLabels[key], url: siteConfig.social[key] }));
