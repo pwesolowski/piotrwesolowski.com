@@ -12,7 +12,9 @@
   }
 
   body {
-    @apply min-h-screen bg-background font-sans text-foreground antialiased;
+    /* Apple's body size: 17px / 1.47. */
+    @apply min-h-screen bg-background font-sans text-[17px] leading-[1.47] text-foreground antialiased;
+    text-rendering: optimizeLegibility;
   }
 
   ::selection {

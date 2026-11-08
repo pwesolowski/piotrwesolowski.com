@@ -17,8 +17,9 @@ import "../globals.css";
 const inter = Inter({
   variable: "--font-inter",
   subsets: ["latin", "latin-ext"],
-  // "optional": no late font swap re-paint (keeps LCP fast on slow mobile); fallback is metric-adjusted.
+  // Fallback only (system font comes first, see tokens.css): no preload, no late swap re-paint.
   display: "optional",
+  preload: false,
 });
 
 export const dynamicParams = false;

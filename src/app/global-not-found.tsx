@@ -6,7 +6,7 @@ import { getMessages } from "@/messages";
 
 import "./globals.css";
 
-const inter = Inter({ variable: "--font-inter", subsets: ["latin", "latin-ext"], display: "swap" });
+const inter = Inter({ variable: "--font-inter", subsets: ["latin", "latin-ext"], display: "optional", preload: false });
 
 export const metadata: Metadata = {
   title: "404 — Piotr Wesołowski",

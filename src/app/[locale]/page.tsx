@@ -36,9 +36,9 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
           loading="eager"
           className="size-32 rounded-full object-cover shadow-xl shadow-black/10 ring-4 ring-background sm:size-40"
         />
-        <h1 className="mt-8 text-4xl font-semibold tracking-[-0.03em] text-balance sm:text-6xl">{siteConfig.name}</h1>
-        <p className="mt-3 text-lg font-semibold text-primary-text sm:text-xl">{siteConfig.role}</p>
-        <p className="mt-6 max-w-lg text-lg leading-relaxed text-muted-foreground text-pretty">{t.intro}</p>
+        <h1 className="mt-8 text-[40px] leading-[1.1] font-semibold tracking-[-0.025em] text-balance sm:text-[64px] sm:leading-[1.06]">{siteConfig.name}</h1>
+        <p className="mt-3 text-[21px] leading-[1.2] font-semibold tracking-[-0.01em] text-primary-text sm:text-[24px]">{siteConfig.role}</p>
+        <p className="mt-5 max-w-lg text-[17px] leading-[1.47] text-muted-foreground text-pretty sm:text-[19px] sm:leading-[1.42]">{t.intro}</p>
 
         <div className="mt-8 flex w-full flex-col gap-3 sm:w-auto sm:flex-row">
           <Button asChild size="lg">
@@ -73,14 +73,14 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
                   <channel.icon className="size-5" aria-hidden="true" />
                 </span>
                 <span className="min-w-0">
-                  <span className="block text-sm text-muted-foreground">{channel.label}</span>
-                  <span className="block truncate font-semibold group-hover:text-primary-text">{channel.value}</span>
+                  <span className="block text-[13px] leading-[1.4] text-muted-foreground">{channel.label}</span>
+                  <span className="block truncate text-[17px] font-semibold tracking-[-0.01em] group-hover:text-primary-text">{channel.value}</span>
                 </span>
               </a>
             </li>
           ))}
         </ul>
-        <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-2 text-sm">
+        <ul className="flex flex-wrap justify-center gap-x-6 gap-y-2 pt-2 text-[15px]">
           {socialLinks.map((social) => (
             <li key={social.key}>
               <a
@@ -100,7 +100,7 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
 
       {/* Experience */}
       <section aria-labelledby="experience-title" className="reveal space-y-8">
-        <h2 id="experience-title" className="text-sm font-semibold uppercase tracking-widest text-muted-foreground">
+        <h2 id="experience-title" className="text-[28px] leading-[1.14] font-semibold tracking-[-0.02em]">
           {t.experienceTitle}
         </h2>
         <ol className="relative space-y-8 border-l border-border pl-6">
@@ -108,13 +108,13 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
             <li key={item.title} className="relative">
               <span
                 aria-hidden="true"
-                className="absolute top-1.5 -left-[29px] size-2.5 rounded-full bg-primary ring-4 ring-background"
+                className="absolute top-[7px] -left-[29px] size-2.5 rounded-full bg-primary ring-4 ring-background"
               />
               {item.when ? (
-                <p className="text-xs font-semibold uppercase tracking-wider text-primary-text">{item.when}</p>
+                <p className="text-[14px] leading-[1.4] font-medium text-primary-text">{item.when}</p>
               ) : null}
-              <h3 className="mt-1 text-lg font-semibold tracking-[-0.01em]">{item.title}</h3>
-              <p className="mt-1 leading-relaxed text-muted-foreground text-pretty">{item.text}</p>
+              <h3 className="mt-0.5 text-[19px] leading-[1.3] font-semibold tracking-[-0.01em]">{item.title}</h3>
+              <p className="mt-1.5 text-muted-foreground text-pretty">{item.text}</p>
             </li>
           ))}
         </ol>
@@ -123,7 +123,7 @@ export default async function HomePage({ params }: { params: LocaleParams }) {
           <h3 className="sr-only">{t.stackLabel}</h3>
           <ul className="flex flex-wrap gap-2">
             {t.stack.map((tech) => (
-              <li key={tech} className="rounded-full bg-muted px-3 py-1 text-sm font-medium">
+              <li key={tech} className="rounded-full bg-muted px-3 py-1 text-[14px] font-medium">
                 {tech}
               </li>
             ))}
