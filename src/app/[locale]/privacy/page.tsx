@@ -1,7 +1,9 @@
+import { ArrowLeft } from "lucide-react";
 import type { Metadata } from "next";
+import Link from "next/link";
 
-import { Container } from "@/components/layout/container";
 import { siteConfig } from "@/config/site";
+import { href } from "@/i18n/routes";
 import { resolveLocale, type LocaleParams } from "@/i18n/params";
 import { pageMetadata } from "@/lib/seo";
 import { getMessages } from "@/messages";
@@ -23,7 +25,14 @@ export default async function PrivacyPage({ params }: { params: LocaleParams }) 
   const t = getMessages(locale);
 
   return (
-    <Container className="max-w-3xl space-y-10 py-12 sm:py-20">
+    <div className="mx-auto w-full max-w-2xl space-y-10 px-4 py-12 sm:px-6 sm:py-16">
+      <Link
+        href={href({ page: "home" }, locale)}
+        className="inline-flex items-center gap-1.5 text-sm font-medium text-primary-text hover:underline"
+      >
+        <ArrowLeft className="size-4" aria-hidden="true" />
+        {t.privacy.back}
+      </Link>
       <h1 className="text-4xl font-semibold tracking-[-0.03em] sm:text-5xl">{t.privacy.h1}</h1>
       {t.privacy.sections.map((section) => (
         <section key={section.title} className="space-y-2">
@@ -31,6 +40,6 @@ export default async function PrivacyPage({ params }: { params: LocaleParams }) 
           <p className="leading-relaxed text-muted-foreground">{section.text}</p>
         </section>
       ))}
-    </Container>
+    </div>
   );
 }

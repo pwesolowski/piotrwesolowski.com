@@ -1,13 +1,12 @@
 /**
  * Single source of truth for public URLs.
  *
- * Pages live internally under /[locale]/... (e.g. /pl/services/audit).
- * Public URLs are localized (/uslugi/audyt-ai-dla-firm, /en/services/ai-audit);
+ * Pages live internally under /[locale]/... (e.g. /pl/privacy).
+ * Public URLs are localized (/polityka-prywatnosci, /en/privacy-policy);
  * next.config.ts turns `getRewrites()` into rewrites, so the mapping is static.
  *
  * NOTE: imported by next.config.ts — keep imports relative (no "@/").
  */
-import { getService, services, type ServiceId } from "../config/services";
 
 export const locales = ["pl", "en"] as const;
 export type Locale = (typeof locales)[number];
@@ -17,50 +16,26 @@ export function isLocale(value: string): value is Locale {
   return (locales as readonly string[]).includes(value);
 }
 
-export type Route =
-  | { page: "home" }
-  | { page: "about" }
-  | { page: "privacy" }
-  | { page: "service"; id: ServiceId };
+export type Route = { page: "home" } | { page: "privacy" };
 
-const staticPaths = {
+const paths = {
   home: { pl: "/", en: "/en" },
-  about: { pl: "/o-mnie", en: "/en/about" },
   privacy: { pl: "/polityka-prywatnosci", en: "/en/privacy-policy" },
 } as const;
 
 /** Public, localized path for a route. */
 export function href(route: Route, locale: Locale, hash?: string): string {
-  let path: string;
-
-  if (route.page === "service") {
-    const slug = getService(route.id)!.slug[locale];
-    path = locale === "pl" ? `/uslugi/${slug}` : `/en/services/${slug}`;
-  } else {
-    path = staticPaths[route.page][locale];
-  }
+  const path = paths[route.page][locale];
 
   return hash ? `${path}#${hash}` : path;
 }
 
 /** Internal app-router path for a route. */
 function internalPath(route: Route, locale: Locale): string {
-  switch (route.page) {
-    case "home":
-      return `/${locale}`;
-    case "service":
-      return `/${locale}/services/${route.id}`;
-    default:
-      return `/${locale}/${route.page}`;
-  }
+  return route.page === "home" ? `/${locale}` : `/${locale}/${route.page}`;
 }
 
-export const allRoutes: Route[] = [
-  { page: "home" },
-  { page: "about" },
-  { page: "privacy" },
-  ...services.map((service) => ({ page: "service" as const, id: service.id })),
-];
+export const allRoutes: Route[] = [{ page: "home" }, { page: "privacy" }];
 
 /** Public path -> route + locale (used by the language switcher). */
 export function resolvePath(pathname: string): { route: Route; locale: Locale } | null {
@@ -82,3 +57,11 @@ export function getRewrites() {
       .filter((rewrite) => rewrite.source !== rewrite.destination),
   );
 }
+
+/** Pages removed when the site became a one-page business card. */
+export const legacyRedirects = [
+  { source: "/o-mnie", destination: "/" },
+  { source: "/uslugi/:slug*", destination: "/" },
+  { source: "/en/about", destination: "/en" },
+  { source: "/en/services/:slug*", destination: "/en" },
+].map((redirect) => ({ ...redirect, permanent: true }));

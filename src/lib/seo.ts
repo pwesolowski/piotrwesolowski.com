@@ -46,7 +46,6 @@ export function pageMetadata({ locale, route, title, description }: PageMetadata
       card: "summary_large_image",
       title,
       description,
-      ...(siteConfig.xHandle ? { site: siteConfig.xHandle, creator: siteConfig.xHandle } : {}),
     },
   };
 }

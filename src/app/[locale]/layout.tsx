@@ -4,9 +4,9 @@ import { Inter } from "next/font/google";
 import type { ReactNode } from "react";
 
 import { SiteFooter } from "@/components/layout/site-footer";
-import { SiteHeader } from "@/components/layout/site-header";
-import { StickyCta } from "@/components/layout/sticky-cta";
+import { LanguageSwitch } from "@/components/layout/language-switch";
 import { ThemeProvider } from "@/components/layout/theme-provider";
+import { ThemeToggle } from "@/components/layout/theme-toggle";
 import { siteConfig } from "@/config/site";
 import { generateLocaleParams, resolveLocale, type LocaleParams } from "@/i18n/params";
 import { siteJsonLd } from "@/lib/json-ld";
@@ -57,10 +57,12 @@ export default async function LocaleLayout({
           >
             {t.nav.skipToContent}
           </a>
-          <SiteHeader locale={locale} t={t} />
+          <div className="mx-auto flex w-full max-w-2xl justify-end gap-1 px-2 pt-3 sm:px-4">
+            <LanguageSwitch locale={locale} label={t.nav.switchLanguage} />
+            <ThemeToggle label={t.nav.toggleTheme} />
+          </div>
           <main id="main">{children}</main>
           <SiteFooter locale={locale} t={t} />
-          <StickyCta t={t} />
         </ThemeProvider>
         <script
           type="application/ld+json"
